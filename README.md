@@ -120,7 +120,6 @@ playwright-tests/
 ├── venv/                   # Virtual environment folder
 └── .gitignore              # Git ignore file
 ```
-```
 
 ---
 

@@ -285,7 +285,7 @@ class ProductScraper:
     
     def handle_interrupt(self, sig, frame) -> None:
         """Handle Ctrl+C gracefully"""
-        logger.warning("⚠️ Interrupted! Saving progress...")
+        logger.warning("Interrupted! Saving progress...")
         
         if self.progress.update(len(self.products), force=True):
             logger.info(self.progress.get_progress_str())
@@ -589,7 +589,7 @@ class ProductScraper:
                 if products:
                     self._save_products_to_file(CONFIG['output_file'])
                     elapsed = time.time() - start_time
-                    logger.info(f"✅ Completed in {elapsed:.1f} seconds!")
+                    logger.info(f"Completed in {elapsed:.1f} seconds!")
                     self._generate_summary_stats()
                 else:
                     logger.warning("No products extracted")

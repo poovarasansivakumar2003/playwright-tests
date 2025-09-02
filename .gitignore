@@ -1,0 +1,4 @@
+/venv
+/backups
+session_state.json
+products_data.json
